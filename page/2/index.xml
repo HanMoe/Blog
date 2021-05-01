@@ -1,14 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>老陳网志</title>
-    <link>https://blog.chenplus.com/</link>
+    <link>https://cc.js.org/</link>
     <description>Recent content on 老陳网志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This is a customized copyright.</copyright>
     <lastBuildDate>Tue, 16 Feb 2021 16:53:46 +0800</lastBuildDate>
     
-        <atom:link href="https://blog.chenplus.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://cc.js.org/index.xml" rel="self" type="application/rss+xml" />
     
     
     
