@@ -6,24 +6,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Sun, 07 Mar 2021 13:55:53 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 16 Feb 2021 16:53:46 +0800</lastBuildDate>
     
         <atom:link href="https://blog.chenplus.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    
-        <item>
-        <title>test</title>
-        <link>https://blog.chenplus.com/post/test/</link>
-        <pubDate>Sun, 07 Mar 2021 13:55:53 +0800</pubDate>
-        
-        <guid>https://blog.chenplus.com/post/test/</guid>
-        <description>老陳网志 https://blog.chenplus.com/post/test/ -&lt;p&gt;折腾了一半夜，终于搞定了在博客内插入指定文件夹内的图片，之前不报错，也不显示，原来是没有在&lt;code&gt;single.html&lt;/code&gt;里加上引入 PATH 的代码：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;{{ .&lt;span style=&#34;color:#a6e22e&#34;&gt;Render&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;}}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;搞定之后爽歪歪。&lt;/p&gt;
-&lt;p&gt;接下来准备研究一下瀑布流和灯箱效果了。&lt;/p&gt;
-- https://blog.chenplus.com/post/test/ - This is a customized copyright.</description>
-        </item>
     
     
     
@@ -352,6 +337,18 @@ Visit https://gohugo.io/ for quickstart guide and full documentation.
 &lt;p&gt;暂无其他链接！&lt;/p&gt;
 &lt;/blockquote&gt;
 - https://blog.chenplus.com/about/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Hello world!</title>
+        <link>https://blog.chenplus.com/post/helloworld/</link>
+        <pubDate>Sun, 15 Dec 2019 11:25:05 -0500</pubDate>
+        
+        <guid>https://blog.chenplus.com/post/helloworld/</guid>
+        <description>老陳网志 https://blog.chenplus.com/post/helloworld/ -&lt;p&gt;　你好世界，愿这里成为你的一片净土。&lt;/p&gt;
+- https://blog.chenplus.com/post/helloworld/ - This is a customized copyright.</description>
         </item>
     
     
