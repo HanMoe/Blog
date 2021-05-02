@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cloudstudio on 老陳网志</title>
-    <link>https://cc.js.org/tags/cloudstudio/</link>
+    <link>https://blog-chenplus.vercel.app/tags/cloudstudio/</link>
     <description>Recent content in cloudstudio on 老陳网志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This is a customized copyright.</copyright>
     <lastBuildDate>Wed, 15 Apr 2020 14:53:46 +0800</lastBuildDate>
     
-	<atom:link href="https://cc.js.org/tags/cloudstudio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog-chenplus.vercel.app/tags/cloudstudio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>用cloud studio来搭建Hugo</title>
-      <link>https://cc.js.org/post/hugo-cloudstudio/</link>
+      <link>https://blog-chenplus.vercel.app/post/hugo-cloudstudio/</link>
       <pubDate>Wed, 15 Apr 2020 14:53:46 +0800</pubDate>
       
-      <guid>https://cc.js.org/post/hugo-cloudstudio/</guid>
+      <guid>https://blog-chenplus.vercel.app/post/hugo-cloudstudio/</guid>
       <description>前言 我的Hogo博客托管在Coding，相对来说比在Github速度快很多。
 Hugo博客跟Hexo差不多先在本地部署好，生成静态文件然后推送到仓库。
 基本上都是在本地写文章，有时候觉的文章数据在本地，换了部署环境就不能同步保存了。
