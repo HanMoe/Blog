@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>用cloud studio来搭建Hugo - 老陳网志</title>
+    <meta property="og:title" content="用cloud studio来搭建Hugo - 老陳网志">
+    
+	
+	
+
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Hugo通过cloud studio部署写博客">
+      <meta property="og:description" content="Hugo通过cloud studio部署写博客">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="posts">
+    <header class="masthead">
+      <h1><a href="/">老陳网志</a></h1>
+
+<p class="tagline">手帳 &amp;ノート📘</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" hidden/>
+  <label id="menu-label" for="menu-check" class="unselectable" hidden>
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">主页</a></li>
+  
+  <li><a href="/about/">关于</a></li>
+  
+  <li><a href="/categories/">类别</a></li>
+  
+  <li><a href="/tags/">标签</a></li>
+  
+  <li><a href="/index.xml">订阅</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>用cloud studio来搭建Hugo</h1>
+
+<h3>
+  2020-04-15</h3>
+<hr>
+
+
+      </header>
+
+
+
+<h2 id="heading">前言</h2>
+<p>我的Hogo博客托管在<a href="https://coding.net">Coding</a>，相对来说比在<a href="https://github.com">Github</a>速度快很多。</p>
+<p>Hugo博客跟Hexo差不多先在本地部署好，生成静态文件然后推送到仓库。</p>
+<p>基本上都是在本地写文章，有时候觉的文章数据在本地，换了部署环境就不能同步保存了。</p>
+<p>百度找到一篇文章，在Ubuntu 18.04系统中安装和使用Hugo的方法。</p>
+<p>这样就能通过<a href="http://cloudstudio.net">Cloud studio</a>部署Hogo环境，就能实现在云端写文章了。</p>
+<h2 id="heading-1">部署</h2>
+<p>首先在Coding的<a href="http://cloudstudio.net">Cloud studio</a>创建工作空间，预置环境选择：Ubuntu 18.04</p>
+<p>然后从apt存储库安装Hugo在Ubuntu 18.04 LTS系统中更新你的系统apt索引并安装Hugo.</p>
+<p><code>$sudo apt-get update  $ sudo apt-get install hugo</code></p>
+<p>你可以在安装后确认hugo二进制文件的位置</p>
+<p><code>$ which hugo</code></p>
+<p>/usr/bin/hugo</p>
+<p>从.deb包安装Hugo在Ubuntu 18.04 LTS系统中</p>
+<p>首先，从github hugo页面下载最新版本，当前版本是v0.69.2，选择与你的CPU架构匹配的版本：</p>
+<p><code>wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.54.0_Linux-64bit.deb</code></p>
+<p>GitHub可能速度比较慢下面我提供了我国内服务器下载地址：</p>
+<p><code>wget http://d.lianbaer.com/download/hugo_0.69.2_Linux-64bit.deb</code></p>
+<p>在运行的时候下载命令的时候可能报错。wget: command not found！主要是因为你的系统太干净了，没有安装下载命令的控制器，我们给Ubuntu系统安装个下载命令器即可。</p>
+<p><code>apt-get install -y wget</code></p>
+<p>然后使用以下命令安装包：</p>
+<pre><code>$ sudo dpkg -i hugo_0.69.2_Linux-64bit.deb
+
+Selecting previously unselected package hugo.
+
+(Reading database … 187292 files and directories currently installed.)
+
+Preparing to unpack hugo_0.69.2_Linux-64bit.deb …
+
+Unpacking hugo (0.69.2) …
+
+Setting up hugo (0.69.2) …
+</code></pre><p>如果安装成功，你应该能够使用hugo命令：</p>
+<p><code>$ hugo --help</code></p>
+<p>然后就可以在Cloud studio 生成博客目录</p>
+<p>相关代码如下：</p>
+<pre><code>hugo new site 博客名称
+hugo new posts/文章.md
+hugo server -D
+hugo -D
+cd public
+</code></pre><h2 id="hugo">Hugo通过命令一键部署</h2>
+<p>关于Coding现在有个不足之处就是我在 cloudstudio 写完文章以后push到Coding比较麻烦，需要输入好几条命令，下面提供具体操作如下。</p>
+<p>在hugo目录中新建一个文件夹命名为 deploy.sh，文件内容如下：</p>
+<pre><code># hugo生成
+hugo
+# cd到构建输出的目录下
+cd public
+# 初始化仓库
+git init
+# 添加
+git add -A
+# 提交
+git commit -m deploy
+# 强制推送到 chenchilde.github.io 仓库的 master 分支
+git push -f git@e.coding.net:chenhonghan/Blog.git master
+# 结束
+cd -
+</code></pre><p>然后每次在写完文章以后，直接运行 <code>bash deploy.sh</code></p>
+<p>这样就可以了。</p>
+<p><img src="/images/Cs1.png" alt="deploy.sh-1"></p>
+<p>这个是运行记录</p>
+<p><img src="/images/Cs2.png" alt="deploy.sh-1"></p>
+<p><strong>是不是部署很简单，现在这样就可以开始你的云端之旅了。</strong>  😎</p>
+
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/posts/my-digital-life-1/">我的数字生活进阶-001</a></span>
+  <span class="nav-next"><a href="/posts/bokenimei/">你妹，就是这个风格。</a> &rarr;</span>
+</nav>
+
+
+
+
+  
+  
+<div class="pagination__title">
+    <hr >
+  </div>
+  <div id="tcomment"></div>
+  <script src="https://cdn.jsdelivr.net/npm/twikoo@1.3.1/dist/twikoo.all.min.js"></script>
+  <script>twikoo.init({ envId: 'chencloud-1dcd88', el: '#tcomment' })</script>
+  
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.org/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">© 2021 <a href="https://www.chenplus.com/">C/mm</a>  | <a href="https://gohugo.io">Hugo</a></div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

@@ -2,22 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>微博 on 老陳网志</title>
-    <link>https://blog-chenplus.vercel.app/tags/%E5%BE%AE%E5%8D%9A/</link>
+    <link>https://yiyuan.vercel.app/tags/%E5%BE%AE%E5%8D%9A/</link>
     <description>Recent content in 微博 on 老陳网志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <copyright>This is a customized copyright.</copyright>
     <lastBuildDate>Tue, 16 Feb 2021 16:53:46 +0800</lastBuildDate>
     
-	<atom:link href="https://blog-chenplus.vercel.app/tags/%E5%BE%AE%E5%8D%9A/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yiyuan.vercel.app/tags/%E5%BE%AE%E5%8D%9A/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>你好！2021</title>
-      <link>https://blog-chenplus.vercel.app/post/2021/</link>
+      <link>https://yiyuan.vercel.app/posts/2021/</link>
       <pubDate>Tue, 16 Feb 2021 16:53:46 +0800</pubDate>
       
-      <guid>https://blog-chenplus.vercel.app/post/2021/</guid>
+      <guid>https://yiyuan.vercel.app/posts/2021/</guid>
       <description>时间过的真快，现在又是新的一年，终于摔开了不痛快的2020。
 2020真是不幸运的一年，一开始就是疫情的来临。
 让我在家呆了半年，什么事情都没干成，失去的东西也不少。
@@ -30,10 +29,10 @@
     
     <item>
       <title>吐槽神器—B言B语</title>
-      <link>https://blog-chenplus.vercel.app/post/bb/</link>
+      <link>https://yiyuan.vercel.app/posts/bb/</link>
       <pubDate>Sat, 25 Apr 2020 14:53:46 +0800</pubDate>
       
-      <guid>https://blog-chenplus.vercel.app/post/bb/</guid>
+      <guid>https://yiyuan.vercel.app/posts/bb/</guid>
       <description>在刷博客的时候无意中发现@Daibor大佬的文章写到利用后端 BaaS 快速搭建专属无点赞评论版微博b言b语。原文链接
 我搭建的BB演示👇：bb.ChenPlus.com
 基于LeanCloud 来实现的。前端用 AppID、AppKey 来展示，并把 class 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 MasterKey 来更新，避免数据被更改。
