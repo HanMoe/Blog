@@ -60,14 +60,5 @@ Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。
 hugo is the main command, used to build your Hugo site. Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go.</description>
     </item>
     
-    <item>
-      <title>测试1111</title>
-      <link>https://blog-chenplus.vercel.app/posts/%E6%B5%8B%E8%AF%95/</link>
-      <pubDate>Fri, 08 Mar 2019 16:00:00 +0000</pubDate>
-      
-      <guid>https://blog-chenplus.vercel.app/posts/%E6%B5%8B%E8%AF%95/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>
