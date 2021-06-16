@@ -1,143 +1,525 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>中文文本测试 - 老陳网志</title>
-    <meta property="og:title" content="中文文本测试 - 老陳网志">
-    
-	
-	
+<html><head>
+<title>中文文本测试</title>
 
-    <meta name="twitter:card" content="summary">
 
-    
-      
-    
 
-    
-      
-      <meta property="description" content="本文章采用狗屁不通文章生成器生成,无任何实际含义.">
-      <meta property="og:description" content="本文章采用狗屁不通文章生成器生成,无任何实际含义.">
-      
-    
 
-    
-    
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="本文章采用狗屁不通文章生成器生成,无任何实际含义.">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
 
-    
 
-    
-    
 
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/custom.css" />
 
-  </head>
+
+
+
+
+
+
+
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
 
   
-  <body class="posts">
-    <header class="masthead">
-      <h1><a href="/">老陳网志</a></h1>
 
-<p class="tagline">手帳 &amp;ノート📘</p>
 
-      <nav class="menu">
-  <input id="menu-check" type="checkbox" hidden/>
-  <label id="menu-label" for="menu-check" class="unselectable" hidden>
-    <span class="icon close-icon">✕</span>
-    <span class="icon open-icon">☰</span>
-    <span class="text">Menu</span>
-  </label>
-  <ul>
+
+
+<link rel="icon" href="https://blog.chenplus.com/favicon.ico">
+
+
+
+<link rel="stylesheet" href="https://blog.chenplus.com/scss/journal.min.5e8f3f653e9f6ce67bf72ff8ee6fee69decf7b5639a3ae7f8344750ad4e065b1.css" integrity="sha256-Xo8/ZT6fbOZ79y/47m/uad7Pe1Y5o65/g0R1CtTgZbE=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://blog.chenplus.com/scss/dark-mode.min.bdfa63b2e89903517dcbb1032b537d54cff3f425c19d008a78dfe49e6cd07ced.css" integrity="sha256-vfpjsuiZA1F9y7EDK1N9VM/z9CXBnQCKeN/knmzQfO0=" media="screen">
+
+
+<script src="/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
   
+    <script src="/js/toc-collapse.js"></script>
   
-  <li><a href="/">主页</a></li>
-  
-  <li><a href="/about/">关于</a></li>
-  
-  <li><a href="/categories/">类别</a></li>
-  
-  <li><a href="/tags/">标签</a></li>
-  
-  <li><a href="/index.xml">订阅</a></li>
-  
-  
-  </ul>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.3.1/dist/twikoo.all.min.js"></script>
+
+
+
+</head>
+<body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://blog.chenplus.com/">
+    
+        <div class="nav-title">
+            老陳网志
+        </div>
+        
+        <div class="nav-subtitle">
+            手帳 &amp;ノート📘
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="http://www.chenplus.com/">
+                首頁
+            </a>
+            
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                歸檔
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                分類
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/about">
+                關於
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> 
+ 
+<br>
+ Host by <a href="https://cloudbase.net/">Cloudbase</a>  & <a href="https://vercel.com/">Vercel</a> <br>
+<br>
+<a href="https://beian.miit.gov.cn/"> 渝ICP备18007511号</a> 
+<br>
+
+&copy; Copyright 2021 ChenPlus.com
+
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a class="pagination-action" v-on:click="toggleDarkMode">
+            <i class="material-icons pagination-action-icon" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons pagination-action-icon" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="http://www.chenplus.com/">
+                    首頁
+                </a>
+                
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    歸檔
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    分類
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/about">
+                    關於
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://blog.chenplus.com/">
+            老陳网志
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" v-on:click="toggleDarkMode">
+            <i class="material-icons" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </button>
+        
+    </div>
 </nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://blog.chenplus.com/">
+        <div class="single-column-header-title">老陳网志</div>
+        
+        <div class="single-column-header-subtitle">手帳 &amp;ノート📘</div>
+        
 
-    </header>
+    </a>
+</div>
 
-    <article class="main">
-      <header class="title">
-      
-<h1>中文文本测试</h1>
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+                
+            
 
-<h3>
-  2020-03-15</h3>
-<hr>
+            <div class="post-head-wrapper"
+                
+                    
+                    
+                    style="background-image: url('https://blog.chenplus.com/images/chinese.jpg')"
+                    
+                
+            >
+                <div class="post-title">
+                    中文文本测试
+                    
+                    <div class="post-subtitle">
+                        本文章采用狗屁不通文章生成器生成,无任何实际含义.
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2020-03-15 11:25
+                        </time>
+                        
 
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94">生活随笔</a>
+                                &nbsp;
+                        
 
-      </header>
-
-
-
-<p>　　这样看来， 邓拓在不经意间这样说过，越是没有本领的就越加自命不凡。这不禁令我深思。 我们不得不面对一个非常尴尬的事实，那就是， 一般来说， 所谓中午吃什么，关键是中午吃什么需要如何写。 伏尔泰说过一句富有哲理的话，坚持意志伟大的事业需要始终不渝的精神。这启发了我， 那么， 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。 这样看来， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 一般来讲，我们都必须务必慎重的考虑考虑。 黑格尔说过一句富有哲理的话，只有永远躺在泥坑里的人，才不会再掉进坑里。这启发了我， 我们不得不面对一个非常尴尬的事实，那就是， 既然如何， 在这种困难的抉择下，本人思来想去，寝食难安。</p>
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/chinese">Chinese</a>
+                                &nbsp;
+                            
+                                <a href="/tags/text">text</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>　　这样看来， 邓拓在不经意间这样说过，越是没有本领的就越加自命不凡。这不禁令我深思。 我们不得不面对一个非常尴尬的事实，那就是， 一般来说， 所谓中午吃什么，关键是中午吃什么需要如何写。 伏尔泰说过一句富有哲理的话，坚持意志伟大的事业需要始终不渝的精神。这启发了我， 那么， 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。 这样看来， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 一般来讲，我们都必须务必慎重的考虑考虑。 黑格尔说过一句富有哲理的话，只有永远躺在泥坑里的人，才不会再掉进坑里。这启发了我， 我们不得不面对一个非常尴尬的事实，那就是， 既然如何， 在这种困难的抉择下，本人思来想去，寝食难安。</p>
 <p>　　我认为， 而这些并不是完全重要，更加重要的问题是， 了解清楚中午吃什么到底是一种怎么样的存在，是解决一切问题的关键。 中午吃什么因何而发生？ 而这些并不是完全重要，更加重要的问题是， 卢梭在不经意间这样说过，浪费时间是一桩大罪过。这启发了我， 既然如此， 从这个角度来看， 歌德在不经意间这样说过，意志坚强的人能把世界放在手中像泥块一样任意揉捏。我希望诸位也能好好地体会这句话。 我认为， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 莎士比亚在不经意间这样说过，人的一生是短的，但如果卑劣地过这一生，就太长了。带着这句话，我们还要更加慎重的审视这个问题： 带着这些问题，我们来审视一下中午吃什么。 中午吃什么因何而发生？ 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 布尔沃曾经说过，要掌握书，莫被书掌握；要为生而读，莫为读而生。这似乎解答了我的疑惑。 而这些并不是完全重要，更加重要的问题是， 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 带着这些问题，我们来审视一下中午吃什么。 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 我认为， 一般来说， 中午吃什么，到底应该如何实现。 我们不得不面对一个非常尴尬的事实，那就是， 所谓中午吃什么，关键是中午吃什么需要如何写。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 现在，解决中午吃什么的问题，是非常非常重要的。</p>
 <p>　　我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 带着这些问题，我们来审视一下中午吃什么。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我认为， 问题的关键究竟为何？ 非洲曾经提到过，最灵繁的人也看不见自己的背脊。这启发了我， 易卜生说过一句富有哲理的话，伟大的事业，需要决心，能力，组织和责任感。这似乎解答了我的疑惑。 一般来说， 在这种困难的抉择下，本人思来想去，寝食难安。 中午吃什么，到底应该如何实现。 经过上述讨论， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 中午吃什么因何而发生？
 带着这些问题，我们来审视一下中午吃什么。 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。</p>
 
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2020-03-15</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://blog.chenplus.com/posts/hugo-blog/">
+			Next<br>快速搭建Hugo博客
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://blog.chenplus.com/about/">
+			Previous<br>我的一份自我介绍
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
 
 
-  <footer>
-  
-<nav class="post-nav">
-  <span class="nav-prev">&larr; <a href="/posts/helloworld/">Hello world!</a></span>
-  <span class="nav-next"><a href="/posts/hugo-blog/">快速搭建Hugo博客</a> &rarr;</span>
-</nav>
 
 
 
 
-  
-  
-<div class="pagination__title">
-    <hr >
-  </div>
-  <div id="tcomment"></div>
-  <script src="https://cdn.jsdelivr.net/npm/twikoo@1.3.1/dist/twikoo.all.min.js"></script>
-  <script>twikoo.init({ envId: 'chencloud-1dcd88', el: '#tcomment' })</script>
-  
-  
-  
-
-  
-
-  
-
-  
-
-    
-
-  
 
 
-<script src="//yihui.org/js/math-code.js"></script>
-<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<div id="tcomment"></div>
 
-<script async src="//yihui.org/js/center-img.js"></script>
 
-  
 
-  
-  <hr>
-  <div class="copyright">© 2021 <a href="https://www.chenplus.com/">C/mm</a>  | <a href="https://gohugo.io">Hugo</a></div>
-  
-  </footer>
-  </article>
-  
-  </body>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div><div id="single-column-footer">
+ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> 
+ 
+<br>
+ Host by <a href="https://cloudbase.net/">Cloudbase</a>  & <a href="https://vercel.com/">Vercel</a> <br>
+<br>
+<a href="https://beian.miit.gov.cn/"> 渝ICP备18007511号</a> 
+<br>
+
+&copy; Copyright 2021 ChenPlus.com
+</div>
+            </div>
+    <script>
+let app;
+
+app = new Vue({
+    el: '#app',
+    data: {
+        scrollY: 0,
+        navOpacity: 0,
+        isDrawerOpen: false,
+        mounted: false,
+        isDarkMode: false
+    },
+    methods: {
+            sgn(t, x) {
+                let k = 1. / (1. - 2 * t);
+                if (x <= t) return 0;
+                else if (x >= 1 - t) return 1;
+                else {
+                    return k * (x - t);
+                }
+            },
+            handleScroll() {
+                this.scrollY = window.scrollY;
+                this.navOpacity = this.sgn(.0, Math.min(1, Math.max(0, window.scrollY / (this.pageHeadHeight() - this.navBarHeight() * 0.8))));
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+
+                if (this.navOpacity >= 1) {
+                    navBackground.style.opacity = 1;
+                    navTitle.style.opacity = 1;
+                } else {
+                    navBackground.style.opacity = 0;
+                    navTitle.style.opacity = 0;
+                }
+            },
+            handleResize() {
+                const {navBar, navBackground, navTitle, extraContainer, streamContainer} = this.$refs;
+                extraContainer.style.left = (streamContainer.offsetWidth - extraContainer.offsetWidth) + 'px';
+            },
+            navBarHeight() {
+                return this.$refs.navBar.offsetHeight;
+            },
+            pageHeadHeight() {
+                return this.$refs.pageHead.offsetHeight;
+            },
+            toggleDrawer() {
+                this.isDrawerOpen = !this.isDrawerOpen;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            closeDrawer() {
+                this.isDrawerOpen = false;
+                document.getElementsByTagName('html')[0].style.overflow = this.isDrawerOpen ? 'hidden' : 'unset';
+            },
+            toggleDarkMode() {
+                this.isDarkMode = !this.isDarkMode;
+                if (this.isDarkMode==true){
+                    document.cookie = "night=1;path=/";
+                    document.body.classList.add("night");
+                } else {
+                    document.cookie = "night=0;path=/";
+                    document.body.classList.remove("night");
+                }
+            }
+    },
+    created() {
+        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.handleResize);
+        window._nonDesktop = function () {
+            let check = false;
+            (function (a) {
+                if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+            })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
+        
+        var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        if (night==""){
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                
+            }
+        }else{
+            
+            if (night=="1") {
+                this.toggleDarkMode();
+            }
+        }
+    },
+    mounted() {
+        this.handleScroll();
+        this.handleResize();
+        this.mounted = true;
+
+        
+        
+            twikoo.init({
+                envId: "chencloud-1dcd88",
+                el: '#tcomment',
+                region:  null ,
+            });
+        
+
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.handleResize);
+    }
+});
+</script>
+
+<script src="/js/journal.js"></script>
+
+    </body>
 </html>
-

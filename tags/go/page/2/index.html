@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang='zh' ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>Go | 老陳网志</title>
+
+<meta name="generator" content="Hugo Eureka 0.8.0" />
+<link rel="stylesheet" href="/css/eureka.min.css">
+<script defer src="/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dart.min.js"
+     crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
+  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icon_hu92364d21a820da2c4f0e2f19661e25b0_6901_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hu92364d21a820da2c4f0e2f19661e25b0_6901_180x180_fill_box_center_2.png">
+
+<meta name="description"
+  content="Eureka is a elegant and powerful theme for Hugo.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Tags",
+      "item":"/tags/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"Go",
+      "item":"/tags/go/"}]
+}
+</script>
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[{
+            "@type":"ListItem",
+            "position":  1 ,
+            "name": "Go 源码分析与实战",
+            "description": "Go 源码分析，项目实战系列教程，可以关注公众号：HHFCodeRv 随时关注我的动态。",
+            "url": "/docs/gohandbook/"
+        },{
+            "@type":"ListItem",
+            "position":  2 ,
+            "name": "并发原语",
+            "description": "sync 包相关内容的解析",
+            "url": "/docs/gohandbook/sync-chapter/"
+        },{
+            "@type":"ListItem",
+            "position":  3 ,
+            "name": "随机数",
+            "description": "随机数相关",
+            "url": "/docs/gohandbook/rand-chapter/"
+        },{
+            "@type":"ListItem",
+            "position":  4 ,
+            "name": "一文完全掌握 Go math/rand",
+            "description": "Go 获取随机数是开发中经常会用到的功能, 不过这个里面还是有一些坑存在的, 本文将完全剖析 Go math/rand, 让你轻松使用 Go Rand. 开篇一问: 你觉得 rand 会 panic 吗 ? 源码剖析 math/rand 源码其实很简单, 就两个比较重要的函数 func (rng *rngSource) Seed(seed int64) { rng.tap = 0 rng.feed = rngLen - rngTap //... x := int32(seed) for i := -20; i \u0026lt; rngLen; i++ { x = seedrand(x) if i \u0026gt;= 0 { var u int64 u = int64(x) \u0026lt;\u0026lt; 40 x = seedrand(x) u ^= int64(x) \u0026lt;\u0026lt; 20 x = seedrand(x) u ^= int64(x) u ^= rngCooked[i] rng.vec[i] = u } } } 这个函数就是在设置 seed, 其实就是对 rng.vec 各个位置设",
+            "url": "/docs/gohandbook/rand-chapter/2021-01-23-rand/"
+        }
+    ]
+}
+</script><meta property="og:title" content="Go | 老陳网志" />
+<meta property="og:type" content="website" />
+
+
+<meta property="og:image" content="/images/icon.png">
+
+
+<meta property="og:url" content="/tags/go/" />
+
+
+
+
+
+<meta property="og:description" content="Eureka is a elegant and powerful theme for Hugo." />
+
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="老陳网志" />
+
+
+
+
+
+
+<meta property="og:updated_time" content="2021-05-22T00:00:00&#43;00:00" />
+
+
+
+<meta property="article:section" content="tags" />
+
+
+<link rel="alternate" type="application/rss+xml" href="/tags/go/index.xml" title="老陳网志" />
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">老陳网志</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">关于</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">文章</a>
+            <a href="/archive/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">归档</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">文档</a>
+            <a href="/archive-%E5%89%AF%E6%9C%AC/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">标签</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="flex-grow pt-16">
+    <div class="pl-scrollbar">
+      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+<article class="mx-6 my-8">
+    <h1 class="font-bold text-3xl text-primary-text">Go</h1>
+    
+</article>
+<div class="bg-secondary-bg rounded px-6">
+    <div class="overflow-hidden divide-y">
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="mb-4">
+  <a href="/docs/gohandbook/" class="font-bold text-xl hover:text-eureka">Go 源码分析与实战</a>
+</div>
+<div class="content">
+  Go 源码分析，项目实战系列教程，这个系列教程还在更新中，可以关注公众号：HHFCodeRv 第一时间阅读最新章节（公众号二维码在文末）。 当前内容基于 Go 源码 1.16.2 这个系列文章的目标 Go 业务开发中你是否遇到过这些问题？ 程序出现问题时，定位到某个关键字，才恍然大悟：哦，原来是这么用的！ 看别人代码，看到某段代码时，顿时愣住：这么写是为啥？ 同事间讨论问题，说到某个知识
+</div>
+
+<div class="px-6 pt-4">
+  
+  <div class="">
+      <div class="mb-2">
+          <a href="/docs/gohandbook/sync-chapter/" class="font-semibold hover:text-eureka">并发原语</a>
+      </div>
+      <div class="">本章节是对 sync 包的剖析，包括：Mutex, Cond, sync.Map, WaitGroup, Pool Mutex Cond sync.Map WaitGroup Pool 版权 以上内容均不得复制用于商业用途或发行 © 2020-2021 haohongfan. Licensed under CC-BY-NC-ND 4.0</div>
+  </div>
+  
+  
+  <div class="-mx-4 my-4 border-t"></div>
+  <div class="">
+      <div class="mb-2">
+          <a href="/docs/gohandbook/rand-chapter/" class="font-semibold hover:text-eureka">随机数</a>
+      </div>
+      <div class="">本章节是对 sync 包的剖析，包括：math/rand math/rand 版权 以上内容均不得复制用于商业用途或发行 © 2020-2021 haohongfan. Licensed under CC-BY-NC-ND 4.0</div>
+  </div>
+  
+  <div class="pt-6 hover:text-eureka">
+      <a href="/docs/gohandbook/" class="font-semibold">阅读更多</a>
+      <i class="fas fa-caret-right ml-1"></i>
+  </div>
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="mb-4">
+  <a href="/docs/gohandbook/sync-chapter/" class="font-bold text-xl hover:text-eureka">并发原语</a>
+</div>
+<div class="content">
+  本章节是对 sync 包的剖析，包括：Mutex, Cond, sync.Map, WaitGroup, Pool Mutex Cond sync.Map WaitGroup Pool 版权 以上内容均不得复制用于商业用途或发行 © 2020-2021 haohongfan. Licensed under CC-BY-NC-ND 4.0
+</div>
+
+<div class="px-6 pt-4">
+  
+  <div class="">
+      <div class="mb-2">
+          <a href="/docs/gohandbook/sync-chapter/2021-04-01-mutex/" class="font-semibold hover:text-eureka">这可能是最容易理解的 Go Mutex 源码剖析</a>
+      </div>
+      <div class="">Hi，大家好，我是 haohongfan。 上一篇文章《一文完全掌握 Go math/rand》，我们知道 math/rand 的 global rand 有一个全局锁，我的文章里面有一句话：“修复方案: 就是把 rrRand 换成了 globalRand, 在线上高并发场景下, 发现全局锁影响并不大.”， 有同学私聊我“他们遇到线上服务的锁竞争特别激烈”。确实我这句话说的并不严谨。但是也让我有了一个思考：到底多高的 QPS 才能让 Mutex 产生强烈的锁竞争</div>
+  </div>
+  
+  
+  <div class="-mx-4 my-4 border-t"></div>
+  <div class="">
+      <div class="mb-2">
+          <a href="/docs/gohandbook/sync-chapter/2021-05-10-sync-cond/" class="font-semibold hover:text-eureka">这一次，彻底搞懂 Go Cond</a>
+      </div>
+      <div class="">hi，大家好，我是 haohongfan。 本篇文章会从源码角度去深入剖析下 sync.Cond。Go 日常开发中 sync.Cond 可能是我们用的较少的控制并发的手段，因为大部分场景下都被 Channel 代替了。还有就是 sync.Cond 使用确实也蛮复杂的。 比如下面这段代码： package main import ( &amp;quot;fmt&amp;quot; &amp;quot;time&amp;quot; ) func main() { done := make(chan int, 1) go func() { time.Sleep(5 * time.Second) done &amp;lt;- 1 }() fmt.Println(&amp;quot;waiting&amp;quot;) &amp;lt;-done fmt.Println(&amp;quot;done&amp;quot;) } 同样可以使用 sync.Cond 来实现 package main import ( &amp;quot;fmt&amp;quot; &amp;quot;sync&amp;quot; &amp;quot;time&amp;quot; ) func main() { cond := sync.NewCond(&amp;amp;sync.Mutex{}) var flag bool go func() { time.Sleep(time.Second * 5) cond.L.Lock() flag</div>
+  </div>
+  
+  
+  <div class="-mx-4 my-4 border-t"></div>
+  <div class="">
+      <div class="mb-2">
+          <a href="/docs/gohandbook/sync-chapter/2021-05-10-sync-waitgroup/" class="font-semibold hover:text-eureka">最清晰易懂的 Go WaitGroup 源码剖析</a>
+      </div>
+      <div class="">hi，大家好，我是haohongfan。 本篇主要介绍 WaitGroup 的一些特性，让我们从本质上去了解 WaitGroup。关于 WaitGroup 的基本用法这里就不做过多介绍了。相对于《这可能是最容易理解的 Go Mutex 源码剖析》来说，WaitGroup 就简单的太多了。 源码剖析 type WaitGroup struct { noCopy noCopy state1 [3]uint32 } WaitGroup 底层结构看起来简单，但 WaitGroup.state1 其实代表三个字段：counter，waiter，sema。 counter ：可以理解为</div>
+  </div>
+  
+  <div class="pt-6 hover:text-eureka">
+      <a href="/docs/gohandbook/sync-chapter/" class="font-semibold">阅读更多</a>
+      <i class="fas fa-caret-right ml-1"></i>
+  </div>
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="mb-4">
+  <a href="/docs/gohandbook/rand-chapter/" class="font-bold text-xl hover:text-eureka">随机数</a>
+</div>
+<div class="content">
+  本章节是对 sync 包的剖析，包括：math/rand math/rand 版权 以上内容均不得复制用于商业用途或发行 © 2020-2021 haohongfan. Licensed under CC-BY-NC-ND 4.0
+</div>
+
+<div class="px-6 pt-4">
+  
+  <div class="">
+      <div class="mb-2">
+          <a href="/docs/gohandbook/rand-chapter/2021-01-23-rand/" class="font-semibold hover:text-eureka">一文完全掌握 Go math/rand</a>
+      </div>
+      <div class="">Go 获取随机数是开发中经常会用到的功能, 不过这个里面还是有一些坑存在的, 本文将完全剖析 Go math/rand, 让你轻松使用 Go Rand. 开篇一问: 你觉得 rand 会 panic 吗 ? 源码剖析 math/rand 源码其实很简单, 就两个比较重要的函数 func (rng *rngSource) Seed(seed int64) { rng.tap = 0 rng.feed = rngLen - rngTap //... x := int32(seed) for i := -20; i &amp;lt; rngLen; i&#43;&#43; { x = seedrand(x) if i &amp;gt;= 0 { var u int64 u = int64(x) &amp;lt;&amp;lt; 40 x = seedrand(x) u ^= int64(x) &amp;lt;&amp;lt; 20 x = seedrand(x) u ^= int64(x) u ^= rngCooked[i] rng.vec[i] = u } } } 这个函数就是在设置 seed, 其实就是对 rng.vec 各个位置设</div>
+  </div>
+  
+  <div class="pt-6 hover:text-eureka">
+      <a href="/docs/gohandbook/rand-chapter/" class="font-semibold">阅读更多</a>
+      <i class="fas fa-caret-right ml-1"></i>
+  </div>
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="mb-4">
+  <a href="/docs/gohandbook/rand-chapter/2021-01-23-rand/" class="font-bold text-xl hover:text-eureka">一文完全掌握 Go math/rand</a>
+</div>
+<div class="content">
+  Go 获取随机数是开发中经常会用到的功能, 不过这个里面还是有一些坑存在的, 本文将完全剖析 Go math/rand, 让你轻松使用 Go Rand. 开篇一问: 你觉得 rand 会 panic 吗 ? 源码剖析 math/rand 源码其实很简单, 就两个比较重要的函数 func (rng *rngSource) Seed(seed int64) { rng.tap = 0 rng.feed = rngLen - rngTap //... x := int32(seed) for i := -20; i &amp;lt; rngLen; i&#43;&#43; { x = seedrand(x) if i &amp;gt;= 0 { var u int64 u = int64(x) &amp;lt;&amp;lt; 40 x = seedrand(x) u ^= int64(x) &amp;lt;&amp;lt; 20 x = seedrand(x) u ^= int64(x) u ^= rngCooked[i] rng.vec[i] = u } } } 这个函数就是在设置 seed, 其实就是对 rng.vec 各个位置设
+</div>
+
+<div class="px-6 pt-4">
+  
+  <div class="pt-6 hover:text-eureka">
+      <a href="/docs/gohandbook/rand-chapter/2021-01-23-rand/" class="font-semibold">阅读更多</a>
+      <i class="fas fa-caret-right ml-1"></i>
+  </div>
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+</div>
+
+
+</div>
+
+<ul class="pagination">
+  <li class="page-item">
+    <a href="/tags/go/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a href="/tags/go/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/tags/go/">1</a>
+  </li>
+  <li class="page-item active">
+    <a class="page-link" href="/tags/go/page/2/">2</a>
+  </li>
+  <li class="page-item disabled">
+    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a href="/tags/go/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+  </li>
+</ul>
+
+
+
+      </div>
+    </div>
+    
+  </main>
+  <footer class="pl-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2021 <a href="https://www.chenplus.com/"> ChenPlus.com </a> <a href=""> 渝ICP备18007511号 </a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>
