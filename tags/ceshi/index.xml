@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ceshi on 老陳网志</title>
+    <link>https://blog-chenplus.vercel.app/tags/ceshi/</link>
+    <description>Recent content in ceshi on 老陳网志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Fri, 08 Mar 2019 16:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog-chenplus.vercel.app/tags/ceshi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>测试1111</title>
+      <link>https://blog-chenplus.vercel.app/posts/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Fri, 08 Mar 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://blog-chenplus.vercel.app/posts/%E6%B5%8B%E8%AF%95/</guid>
+      <description>&lt;p&gt;-&amp;ndash;&lt;/p&gt;
+&lt;p&gt;title: Placeholder Text&lt;/p&gt;
+&lt;p&gt;description: Lorem Ipsum Dolor Si Amet&lt;/p&gt;
+&lt;p&gt;toc: true&lt;/p&gt;
+&lt;p&gt;authors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Hugo Authors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example Author&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;tags:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;markdown&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;text&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;categories:&lt;/p&gt;
+&lt;p&gt;series:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Themes Guide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;date: &amp;lsquo;2019-03-09&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;lastmod: &amp;lsquo;2019-03-09&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;draft: false&lt;/p&gt;
+&lt;p&gt;-&amp;ndash;&lt;/p&gt;
+&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
