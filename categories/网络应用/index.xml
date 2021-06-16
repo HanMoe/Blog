@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>网络应用 on 老陳网志</title>
-    <link>https://blog.chenplus.com/categories/%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8/</link>
+    <link>https://blog-chenplus.vercel.app/categories/%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8/</link>
     <description>Recent content in 网络应用 on 老陳网志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This is a customized copyright.</copyright>
     <lastBuildDate>Tue, 28 Apr 2020 14:53:46 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.chenplus.com/categories/%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog-chenplus.vercel.app/categories/%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>frp隐藏CMD窗口运行</title>
-      <link>https://blog.chenplus.com/posts/frp-1/</link>
+      <link>https://blog-chenplus.vercel.app/posts/frp-1/</link>
       <pubDate>Tue, 28 Apr 2020 14:53:46 +0800</pubDate>
       
-      <guid>https://blog.chenplus.com/posts/frp-1/</guid>
+      <guid>https://blog-chenplus.vercel.app/posts/frp-1/</guid>
       <description>新建一个文本文档在开头处写入
 @echo off if &amp;quot;%1&amp;quot; == &amp;quot;h&amp;quot; goto begin mshta vbscript:createobject(&amp;quot;wscript.shell&amp;quot;).run(&amp;quot;&amp;quot;&amp;quot;%~nx0&amp;quot;&amp;quot; h&amp;quot;,0)(window.close)&amp;amp;&amp;amp;exit :begin REM frpc.exe -c frpc.ini 其中frpc.exe -c frpc.ini为运行命令。 另存为.bat文件，放在frp目录下，双击该bat文件会在屏幕中一闪而过。</description>
     </item>
     
     <item>
       <title>吐槽神器—B言B语</title>
-      <link>https://blog.chenplus.com/posts/bb/</link>
+      <link>https://blog-chenplus.vercel.app/posts/bb/</link>
       <pubDate>Sat, 25 Apr 2020 14:53:46 +0800</pubDate>
       
-      <guid>https://blog.chenplus.com/posts/bb/</guid>
+      <guid>https://blog-chenplus.vercel.app/posts/bb/</guid>
       <description>在刷博客的时候无意中发现@Daibor大佬的文章写到利用后端 BaaS 快速搭建专属无点赞评论版微博b言b语。原文链接
 我搭建的BB演示👇：bb.ChenPlus.com
 基于LeanCloud 来实现的。前端用 AppID、AppKey 来展示，并把 class 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 MasterKey 来更新，避免数据被更改。
@@ -41,10 +41,10 @@ POST https://你的AppID前6位.api.lncldglobal.com/1.1/classes/content X-LC-Id:
     
     <item>
       <title>用cloud studio来搭建Hugo</title>
-      <link>https://blog.chenplus.com/posts/hugo-cloudstudio/</link>
+      <link>https://blog-chenplus.vercel.app/posts/hugo-cloudstudio/</link>
       <pubDate>Wed, 15 Apr 2020 14:53:46 +0800</pubDate>
       
-      <guid>https://blog.chenplus.com/posts/hugo-cloudstudio/</guid>
+      <guid>https://blog-chenplus.vercel.app/posts/hugo-cloudstudio/</guid>
       <description>前言 我的Hogo博客托管在Coding，相对来说比在Github速度快很多。
 Hugo博客跟Hexo差不多先在本地部署好，生成静态文件然后推送到仓库。
 基本上都是在本地写文章，有时候觉的文章数据在本地，换了部署环境就不能同步保存了。
@@ -69,10 +69,10 @@ $ sudo dpkg -i hugo_0.69.2_Linux-64bit.deb Selecting previously unselected packa
     
     <item>
       <title>快速搭建Hugo博客</title>
-      <link>https://blog.chenplus.com/posts/hugo-blog/</link>
+      <link>https://blog-chenplus.vercel.app/posts/hugo-blog/</link>
       <pubDate>Mon, 16 Mar 2020 11:25:05 -0500</pubDate>
       
-      <guid>https://blog.chenplus.com/posts/hugo-blog/</guid>
+      <guid>https://blog-chenplus.vercel.app/posts/hugo-blog/</guid>
       <description>前言 一直以来用了这么多年的Wordpress，最近心血来潮，想要重新折腾一番自己的博客。于是想用Hugo搭建。
 Hugo 是目前比较流行的Go编写的静态网站生成器，速度快，易用，可配置，相比Hexo来说操作更为简单。
 Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。可以参照Hugo官网 搭建自己个人博客。
