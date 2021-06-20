@@ -1,0 +1,62 @@
+baseURL  =  "https://blog-chenplus.vercel.app/"
+languageCode = "zh-CN"
+# DefaultContentLanguage = "zh-CN"
+title  =  "老陳网志"
+subtitle = "手帳 &ノート📘"
+
+theme  =  "hello-friend"
+summaryLength = 140
+hasCJKLanguage = true
+# 每页显示的文章数量用于分页
+paginate =  6
+# rss 输出数量
+rssLimit = 5
+
+
+[menu]
+  [[menu.main]]
+  name="归档"
+  url="/archives/"
+  weight="1"
+  [[menu.main]]
+  name="哔哔"
+  url="/bb/"
+  weight="2"
+  [[menu.main]]
+  name="关于"
+  url="/about/"
+  weight="3"
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # "light" or "dark"
+  defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  # showMenuItems = 4
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
+  logoText = "hello friend"
+
+  MenuMore = "更多"
+  DateFormatList = "2006-01-02 15:04:05"
+  DateFormatSingle = "2006-01-02 15:04:05"
+  ReadMore = "阅读全文"
+
+  EditPath = 'https://github.com/OldChenGit/Blog/edit/master/content'
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["Atom", "HTML","JSON"] # <domain>/atom.xml
+  page = ["HTML"]
+  
+[outputFormats.Atom]
+  mediatype = "application/rss"
+  baseName = "atom"
+
+[params.twikoo]
+	enable = true

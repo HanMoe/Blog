@@ -1,0 +1,29 @@
+{{$scratch := newScratch}}
+{{ range (where .Site.Pages "Kind" "page" )}}
+    {{$scratch.Add "total" .WordCount}}
+{{ end }}
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="copyright">
+      <span>共 {{ len (where .Site.RegularPages "Section" "posts") }} 篇文章</span><span> {{$scratch.Get "total" }} 字</span>
+    </div>
+    {{ if $.Site.Copyright }}
+      <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>
+    {{else}}
+      <div class="copyright">
+        <span>© {{ now.Year }} 自豪的采用 <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> & <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a> &middot; 部署于 <a href="https://cloudbase.net/">Cloudbase</a> & <a href="https://vercel.com/">Vercel</a></span>
+      </div>
+    {{end}}
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/OldChenGit/Blog@gh-pages/main.js"></script>
+
+<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/OldChenGit/Blog@gh-pages/lately2.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/OldChenGit/Blog@gh-pages/waterfall.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/OldChenGit/Blog@gh-pages/slimbox2.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/OldChenGit/Blog@gh-pages/main-diy.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script>
