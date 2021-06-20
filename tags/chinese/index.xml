@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chinese on 老陳网志</title>
-    <link>/tags/chinese/</link>
+    <link>https://blog-chenplus.vercel.app/tags/chinese/</link>
     <description>Recent content in Chinese on 老陳网志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 15 Mar 2020 11:25:05 -0400</lastBuildDate>
     
-	<atom:link href="/tags/chinese/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog-chenplus.vercel.app/tags/chinese/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>中文文本测试</title>
-      <link>/posts/chinese/</link>
+      <link>https://blog-chenplus.vercel.app/posts/chinese/</link>
       <pubDate>Sun, 15 Mar 2020 11:25:05 -0400</pubDate>
       
-      <guid>/posts/chinese/</guid>
+      <guid>https://blog-chenplus.vercel.app/posts/chinese/</guid>
       <description>这样看来， 邓拓在不经意间这样说过，越是没有本领的就越加自命不凡。这不禁令我深思。 我们不得不面对一个非常尴尬的事实，那就是， 一般来说， 所谓中午吃什么，关键是中午吃什么需要如何写。 伏尔泰说过一句富有哲理的话，坚持意志伟大的事业需要始终不渝的精神。这启发了我， 那么， 对我个人而言，中午吃</description>
     </item>
     
