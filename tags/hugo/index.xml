@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on 老陳网志</title>
+    <title>hugo on 老陳网志</title>
     <link>https://blog-chenplus.vercel.app/tags/hugo/</link>
-    <description>Recent content in Hugo on 老陳网志</description>
+    <description>Recent content in hugo on 老陳网志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 15 Apr 2020 14:53:46 +0800</lastBuildDate>
@@ -27,6 +27,15 @@
       
       <guid>https://blog-chenplus.vercel.app/posts/hugo-blog/</guid>
       <description>前言 一直以来用了这么多年的Wordpress，最近心血来潮，想要重新折腾一番自己的博客。于是想用Hugo搭建。 Hugo 是目前比较流行的Go编写的静态网站生成器，速度快，易用，可配置，相比Hexo来说操作更为简单。 Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。可以参照Hugo官网 搭建</description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://blog-chenplus.vercel.app/posts/helloworld/</link>
+      <pubDate>Sun, 15 Dec 2019 11:25:05 -0500</pubDate>
+      
+      <guid>https://blog-chenplus.vercel.app/posts/helloworld/</guid>
+      <description>你好世界，愿这里成为你的一片净土。</description>
     </item>
     
   </channel>

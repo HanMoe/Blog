@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日常 on 老陳网志</title>
+    <link>https://blog-chenplus.vercel.app/tags/%E6%97%A5%E5%B8%B8/</link>
+    <description>Recent content in 日常 on 老陳网志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 16 Feb 2021 16:53:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog-chenplus.vercel.app/tags/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>你好！2021</title>
+      <link>https://blog-chenplus.vercel.app/posts/2021/</link>
+      <pubDate>Tue, 16 Feb 2021 16:53:46 +0800</pubDate>
+      
+      <guid>https://blog-chenplus.vercel.app/posts/2021/</guid>
+      <description>时间过的真快，现在又是新的一年，终于摔开了不痛快的2020。 2020真是不幸运的一年，一开始就是疫情的来临。 让我在家呆了半年，什么事情都没干成，失去的东西也不少。 开了几年的几十万的奥迪也秒变吉利，老婆的服装店也亏损不少。 让我欠下一屁股的债和刷爆了信用卡，不少顺心的事也接连不断。 在</description>
+    </item>
+    
+    <item>
+      <title>端午节</title>
+      <link>https://blog-chenplus.vercel.app/posts/duanwu/</link>
+      <pubDate>Wed, 24 Jun 2020 13:53:46 +0800</pubDate>
+      
+      <guid>https://blog-chenplus.vercel.app/posts/duanwu/</guid>
+      <description>端午临中夏，时清日复长 每年农历五月初五 是中国人的传统佳节——端午节 门插艾，香满堂，吃粽子，撒白糖 而在吃货们的眼中 不以食物为代表的节日，都是“耍流氓” 小时候 妈妈会早几天就开始包粽子 爷爷都给我们准备雄黄酒 以迎接端午节 然后串门外婆家去大吃几顿，粽意深情. 浓浓的粽香，撞上深沉的爱 注定是爱</description>
+    </item>
+    
+    <item>
+      <title>你妹，就是这个风格。</title>
+      <link>https://blog-chenplus.vercel.app/posts/bokenimei/</link>
+      <pubDate>Fri, 17 Apr 2020 15:05:55 +0800</pubDate>
+      
+      <guid>https://blog-chenplus.vercel.app/posts/bokenimei/</guid>
+      <description>总是换来换去，之前的博客服务器被我干崩了，数据全部没了！ 现在又重新用go语言搭建的静态博客，直接托管到仓库。 省略了数据备份，又节约了服务器成本。 博客来对我来说是不注重于写作，爱好于折腾。 哎~重头再来吧！继续折腾~😂</description>
+    </item>
+    
+  </channel>
+</rss>

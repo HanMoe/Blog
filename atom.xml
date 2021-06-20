@@ -7,7 +7,7 @@
             <link href="https://blog-chenplus.vercel.app/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://blog-chenplus.vercel.app/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://blog-chenplus.vercel.app/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2021-06-20T01:18:47+00:00</updated>
+    <updated>2021-06-20T08:52:32+00:00</updated>
     
     
     
@@ -44,13 +44,7 @@
                         
                             
                              
-                                <category scheme="https://blog-chenplus.vercel.app/tags/2021" term="2021" label="2021" />
-                             
-                                <category scheme="https://blog-chenplus.vercel.app/tags/%E7%89%9B%E5%B9%B4" term="%E7%89%9B%E5%B9%B4" label="牛年" />
-                             
-                                <category scheme="https://blog-chenplus.vercel.app/tags/%E5%90%90%E6%A7%BD" term="%E5%90%90%E6%A7%BD" label="吐槽" />
-                             
-                                <category scheme="https://blog-chenplus.vercel.app/tags/%E5%BE%AE%E5%8D%9A" term="%E5%BE%AE%E5%8D%9A" label="微博" />
+                                <category scheme="https://blog-chenplus.vercel.app/tags/%E6%97%A5%E5%B8%B8" term="%E6%97%A5%E5%B8%B8" label="日常" />
                             
                         
                     
@@ -94,7 +88,7 @@
                         
                             
                              
-                                <category scheme="https://blog-chenplus.vercel.app/tags/%E8%8A%82%E6%97%A5" term="%E8%8A%82%E6%97%A5" label="节日" />
+                                <category scheme="https://blog-chenplus.vercel.app/tags/%E6%97%A5%E5%B8%B8" term="%E6%97%A5%E5%B8%B8" label="日常" />
                              
                                 <category scheme="https://blog-chenplus.vercel.app/tags/%E7%BE%8E%E9%A3%9F" term="%E7%BE%8E%E9%A3%9F" label="美食" />
                             
@@ -135,9 +129,7 @@ frpc.exe -c frpc.ini
                         
                             
                              
-                                <category scheme="https://blog-chenplus.vercel.app/tags/frp" term="frp" label="frp" />
-                             
-                                <category scheme="https://blog-chenplus.vercel.app/tags/cmd" term="cmd" label="CMD" />
+                                <category scheme="https://blog-chenplus.vercel.app/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
                             
                         
                     
@@ -186,9 +178,7 @@ frpc.exe -c frpc.ini
                         
                             
                              
-                                <category scheme="https://blog-chenplus.vercel.app/tags/%E5%90%90%E6%A7%BD" term="%E5%90%90%E6%A7%BD" label="吐槽" />
-                             
-                                <category scheme="https://blog-chenplus.vercel.app/tags/%E5%BE%AE%E5%8D%9A" term="%E5%BE%AE%E5%8D%9A" label="微博" />
+                                <category scheme="https://blog-chenplus.vercel.app/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
                             
                         
                     
@@ -223,9 +213,7 @@ frpc.exe -c frpc.ini
                         
                             
                              
-                                <category scheme="https://blog-chenplus.vercel.app/tags/%E5%8D%9A%E5%AE%A2" term="%E5%8D%9A%E5%AE%A2" label="博客" />
-                             
-                                <category scheme="https://blog-chenplus.vercel.app/tags/text" term="text" label="text" />
+                                <category scheme="https://blog-chenplus.vercel.app/tags/%E6%97%A5%E5%B8%B8" term="%E6%97%A5%E5%B8%B8" label="日常" />
                             
                         
                     
